@@ -1,0 +1,10 @@
+em vez de fazeres:   echo -n "../etc/shadow" | nc -u -w 5 127.0.0.1 1234    
+faz: echo -n "../etc/passwd" | nc -u -w 5 127.0.0.1 1234
+
+
+
+para executar o chroot, precisei de usar o "sudo"
+
+com o chroot podes experimentar fazer: 
+	echo -n "../lib/libc.so.6" | nc -u -w 5 127.0.0.1 1234
+ 

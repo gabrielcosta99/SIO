@@ -1,0 +1,12 @@
+For example, to retrieve the products bought by a user with UserId 1:
+
+    SELECT Products.* 
+    FROM Products
+    JOIN UserProducts ON Products.Id = UserProducts.ProductId
+    WHERE UserProducts.UserId = 1;
+
+This query selects all columns from the 'Products' table for products associated with the user 
+with 'UserId' 1 in the 'UserProducts' table.
+
+By establishing this relationship and using the junction table, you can keep track of which 
+products each user has purchased while maintaining data integrity in your database.

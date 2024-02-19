@@ -1,0 +1,7 @@
+# Allow DNS requests to the firewall
+fw:~$ iptables -A INPUT -p udp --dport 53 -m state --state NEW -j ACCEPT
+# Allow DNS responses from the host to the firewall
+fw:~$ iptables -A INPUT -p udp --sport 53 -m state --state ESTABLISHED -j ACCEPT
+
+	estas linhas servem para o "SERVER" conseguir saber qual é o ip do facebook, youtube e outros domains
+através do DNS. Se fizermos block do ip de um destes serviços, o "SERVER" não vai conseguir dar-lhes ping 

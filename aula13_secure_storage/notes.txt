@@ -1,0 +1,7 @@
+Ao criar um ficheiro no "encfs-mount", vai aparecer esse mesmo ficheiro no 
+"encfs-storage" mas encriptado (podes ir ao "encfs-storage" e fazes ls)
+
+
+
+
+

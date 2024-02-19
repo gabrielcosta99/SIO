@@ -1,0 +1,15 @@
+certificados:
+    um certificado tem um "issuer" e portanto, se ainda nao confiamos no certificado, podemos confiar nele se confiarmos no issuer
+
+
+
+
+
+
+
+
+
+
+
+
+    

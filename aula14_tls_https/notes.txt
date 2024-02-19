@@ -1,0 +1,7 @@
+
+antes de executar as linhas do ponto 2.2.3, devemos fazer "apt install ca-certificates"
+
+NO PONTO 2.2.3, OS COMANDOS ESTÃO ERRADOS. Correção:
+lxc file push cert.pem webserver/etc/ssl/private/
+lxc file push privkey.pem webserver/etc/ssl/private/
+
